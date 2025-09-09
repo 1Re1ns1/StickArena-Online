@@ -4,7 +4,7 @@ project(StickArena LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(StickArena main.cpp)
+add_executable(StickArena apps/Client/main.cpp)
 
 find_package(SFML CONFIG REQUIRED COMPONENTS Graphics Window System Audio Network)
 target_link_libraries(StickArena PRIVATE
