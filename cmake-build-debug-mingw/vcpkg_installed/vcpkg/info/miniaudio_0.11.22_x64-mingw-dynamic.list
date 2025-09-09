@@ -1,0 +1,8 @@
+x64-mingw-dynamic/
+x64-mingw-dynamic/include/
+x64-mingw-dynamic/include/miniaudio.h
+x64-mingw-dynamic/share/
+x64-mingw-dynamic/share/miniaudio/
+x64-mingw-dynamic/share/miniaudio/copyright
+x64-mingw-dynamic/share/miniaudio/vcpkg.spdx.json
+x64-mingw-dynamic/share/miniaudio/vcpkg_abi_info.txt

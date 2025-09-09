@@ -1,0 +1,3 @@
+C:/Projects c++/StickArena/cmake-build-debug-mingw/CMakeFiles/StickArena.dir
+C:/Projects c++/StickArena/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+C:/Projects c++/StickArena/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
