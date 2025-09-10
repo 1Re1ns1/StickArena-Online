@@ -1,5 +1,7 @@
-#include <SFML/Graphics.hpp>
+#include <stickarena/core/Application.h>
 
 int main() {
-
+    core::app::Application app;
+    app.run();
+    return 0;
 }
