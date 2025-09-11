@@ -1,0 +1,43 @@
+"C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -G Ninja -DCMAKE_TOOLCHAIN_FILE=C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake -DVCPKG_TARGET_TRIPLET=x64-mingw-dynamic -S "C:\Projects c++\StickArena" -B "C:\Projects c++\StickArena\cmake-build-debug-mingw"
+-- Running vcpkg install
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe
+Detecting compiler hash for triplet x64-mingw-dynamic...
+Compiler found: C:/Program Files/JetBrains/CLion 2024.3.4/bin/mingw/bin/g++.exe
+The following packages are already installed:
+  * brotli:x64-mingw-dynamic@1.1.0#1
+  * bzip2[core,tool]:x64-mingw-dynamic@1.0.8#6
+  * egl-registry:x64-mingw-dynamic@2024-01-25
+    entt:x64-mingw-dynamic@3.15.0
+  * freetype[brotli,bzip2,core,png,zlib]:x64-mingw-dynamic@2.13.3
+  * libflac[core,stack-protector]:x64-mingw-dynamic@1.5.0
+  * libogg:x64-mingw-dynamic@1.3.6#1
+  * libpng:x64-mingw-dynamic@1.6.50
+  * libvorbis:x64-mingw-dynamic@1.3.7#4
+  * miniaudio:x64-mingw-dynamic@0.11.22
+  * opengl:x64-mingw-dynamic@2022-12-04#3
+  * opengl-registry:x64-mingw-dynamic@2024-02-10#1
+    sfml[audio,core,graphics,network,window]:x64-mingw-dynamic@3.0.1
+  * stb:x64-mingw-dynamic@2024-07-29#1
+  * vcpkg-cmake:x64-windows@2024-04-23
+  * vcpkg-cmake-config:x64-windows@2024-05-23
+  * zlib:x64-mingw-dynamic@1.3.1
+entt provides CMake targets:
+
+    find_package(EnTT CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE EnTT::EnTT)
+
+The package sfml provides CMake targets:
+
+    find_package(SFML COMPONENTS Network Graphics Window Audio System CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE SFML::Network SFML::Graphics SFML::Window SFML::Audio SFML::System)
+
+    # If you want SFML to provide an implementation of main():
+    target_link_libraries(main PRIVATE SFML::Main)
+
+All requested installations completed successfully in: 1.83 ms
+-- Running vcpkg install - done
+-- Found SFML 3.0.1 in C:/Projects c++/StickArena/cmake-build-debug-mingw/vcpkg_installed/x64-mingw-dynamic/share/sfml
+-- Configuring done (6.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Projects c++/StickArena/cmake-build-debug-mingw

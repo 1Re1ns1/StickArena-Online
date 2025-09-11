@@ -8,7 +8,9 @@ add_executable(StickArena apps/Client/main.cpp
         src/core/Application.cpp
         include/stickarena/core/Application.h
         src/ecs/system/MovementSystem.cpp
-        include/stickarena/ecs/system/MovementSystem.h)
+        include/stickarena/ecs/system/MovementSystem.h
+        src/physics/physicsHero.cpp
+        include/stickarena/physics/physicsHero.h)
 
 target_include_directories(StickArena PRIVATE
         ${CMAKE_SOURCE_DIR}/include
@@ -17,6 +19,9 @@ target_include_directories(StickArena PRIVATE
 find_package(SFML CONFIG REQUIRED COMPONENTS Graphics Window System Audio Network)
 target_link_libraries(StickArena PRIVATE
         SFML::Graphics SFML::Window SFML::System SFML::Audio SFML::Network)
+
+find_package(entt CONFIG REQUIRED)
+target_link_libraries(StickArena PRIVATE EnTT::EnTT)
 
 if(WIN32)
     add_custom_command(TARGET StickArena POST_BUILD

@@ -1,5 +1,8 @@
 {
   "name": "stickarena",
   "version-string": "0.1.0",
-  "dependencies": ["sfml"]
+  "dependencies": [
+    "sfml",
+    "entt"
+  ]
 }
