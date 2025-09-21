@@ -10,7 +10,9 @@ add_executable(StickArena apps/Client/main.cpp
         src/ecs/system/MovementSystem.cpp
         include/stickarena/ecs/system/MovementSystem.h
         src/physics/physicsHero.cpp
-        include/stickarena/physics/physicsHero.h)
+        include/stickarena/physics/physicsHero.h
+        src/ecs/system/Collision.cpp
+        include/stickarena/ecs/system/Collision.h)
 
 target_include_directories(StickArena PRIVATE
         ${CMAKE_SOURCE_DIR}/include

@@ -33,4 +33,4 @@ The package sfml provides CMake targets:
     # If you want SFML to provide an implementation of main():
     target_link_libraries(main PRIVATE SFML::Main)
 
-All requested installations completed successfully in: 1.83 ms
+All requested installations completed successfully in: 1.22 ms

@@ -35,9 +35,9 @@ The package sfml provides CMake targets:
     # If you want SFML to provide an implementation of main():
     target_link_libraries(main PRIVATE SFML::Main)
 
-All requested installations completed successfully in: 1.83 ms
+All requested installations completed successfully in: 1.22 ms
 -- Running vcpkg install - done
 -- Found SFML 3.0.1 in C:/Projects c++/StickArena/cmake-build-debug-mingw/vcpkg_installed/x64-mingw-dynamic/share/sfml
--- Configuring done (6.3s)
--- Generating done (0.1s)
+-- Configuring done (18.9s)
+-- Generating done (0.3s)
 -- Build files have been written to: C:/Projects c++/StickArena/cmake-build-debug-mingw
