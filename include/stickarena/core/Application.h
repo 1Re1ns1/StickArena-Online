@@ -16,5 +16,8 @@ namespace core::app {
         void render();
         void processEvents();
         core::move::MovementComponent w_movement;
+        std::vector<sf::RectangleShape> m_solids;
+        sf::Texture m_playerTex;
+
     };
 }

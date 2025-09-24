@@ -47,7 +47,7 @@ cmake_ninja_workdir = C$:/Projects$ c++/StickArena/cmake-build-debug-mingw/
 #############################################
 # Order-only phony target for StickArena
 
-build cmake_object_order_depends_target_StickArena: phony || .
+build cmake_object_order_depends_target_StickArena: phony || copy_assets
 
 build CMakeFiles/StickArena.dir/apps/Client/main.cpp.obj: CXX_COMPILER__StickArena_unscanned_Debug C$:/Projects$ c++/StickArena/apps/Client/main.cpp || cmake_object_order_depends_target_StickArena
   DEP_FILE = CMakeFiles\StickArena.dir\apps\Client\main.cpp.obj.d
@@ -92,7 +92,7 @@ build CMakeFiles/StickArena.dir/src/ecs/system/Collision.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable StickArena.exe
 
-build StickArena.exe: CXX_EXECUTABLE_LINKER__StickArena_Debug CMakeFiles/StickArena.dir/apps/Client/main.cpp.obj CMakeFiles/StickArena.dir/src/core/Application.cpp.obj CMakeFiles/StickArena.dir/src/ecs/system/MovementSystem.cpp.obj CMakeFiles/StickArena.dir/src/physics/physicsHero.cpp.obj CMakeFiles/StickArena.dir/src/ecs/system/Collision.cpp.obj | vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-graphics-d.a vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-window-d.a vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-audio-d.a vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-network-d.a vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-system-d.a
+build StickArena.exe: CXX_EXECUTABLE_LINKER__StickArena_Debug CMakeFiles/StickArena.dir/apps/Client/main.cpp.obj CMakeFiles/StickArena.dir/src/core/Application.cpp.obj CMakeFiles/StickArena.dir/src/ecs/system/MovementSystem.cpp.obj CMakeFiles/StickArena.dir/src/physics/physicsHero.cpp.obj CMakeFiles/StickArena.dir/src/ecs/system/Collision.cpp.obj | vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-graphics-d.a vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-window-d.a vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-audio-d.a vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-network-d.a vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-system-d.a || copy_assets
   FLAGS = -g
   LINK_LIBRARIES = vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-graphics-d.a  vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-window-d.a  vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-audio-d.a  vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-network-d.a  vcpkg_installed/x64-mingw-dynamic/debug/lib/libsfml-system-d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\StickArena.dir
@@ -101,6 +101,12 @@ build StickArena.exe: CXX_EXECUTABLE_LINKER__StickArena_Debug CMakeFiles/StickAr
   TARGET_FILE = StickArena.exe
   TARGET_IMPLIB = libStickArena.dll.a
   TARGET_PDB = StickArena.exe.dbg
+
+
+#############################################
+# Utility command for copy_assets
+
+build copy_assets: phony CMakeFiles/copy_assets
 
 
 #############################################
@@ -125,6 +131,14 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Custom command for CMakeFiles\copy_assets
+
+build CMakeFiles/copy_assets | ${cmake_ninja_workdir}CMakeFiles/copy_assets: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Projects c++\StickArena\cmake-build-debug-mingw" && "C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory "C:/Projects c++/StickArena/assets" "C:/Projects c++/StickArena/cmake-build-debug-mingw/assets""
+  DESC = Copying assets to build dir
+
 # =============================================================================
 # Target aliases.
 
@@ -138,7 +152,7 @@ build StickArena: phony StickArena.exe
 #############################################
 # Folder: C:/Projects c++/StickArena/cmake-build-debug-mingw
 
-build all: phony StickArena.exe
+build all: phony StickArena.exe copy_assets
 
 # =============================================================================
 # Built-in targets

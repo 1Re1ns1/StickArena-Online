@@ -10,6 +10,7 @@ namespace core::move {
         float verticalY = 0.0f;
         float groundY = 0.0f;
         bool spaceWasDown = false;
+        sf::Vector2f prevPos{0.f, 0.f};
     };
     class MovementSystem {
     public:

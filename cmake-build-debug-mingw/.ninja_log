@@ -1,6 +1,27 @@
 # ninja log v6
-10	1763	7792545765868506	CMakeFiles/StickArena.dir/apps/Client/main.cpp.obj	fec1e146e36af747
+44	1893	7803975399315102	CMakeFiles/StickArena.dir/apps/Client/main.cpp.obj	fec1e146e36af747
 30	106	7792540208814819	CMakeFiles/StickArena.dir/src/physics/physicsHero.cpp.obj	20405b640cdd341f
-16	1840	7792545765918933	CMakeFiles/StickArena.dir/src/core/Application.cpp.obj	cf95453fa7477b19
-1876	5739	7792547600538445	StickArena.exe	9bcedf1c994017a3
-8	1876	7792547581861046	CMakeFiles/StickArena.dir/src/ecs/system/MovementSystem.cpp.obj	ee470f4e152a5549
+58	2679	7803976687502740	CMakeFiles/StickArena.dir/src/core/Application.cpp.obj	cf95453fa7477b19
+2680	7721	7803976713718348	StickArena.exe	94c4b51bcf1cd3c1
+20	1793	7803958472376472	CMakeFiles/StickArena.dir/src/ecs/system/MovementSystem.cpp.obj	ee470f4e152a5549
+27	1955	7803958472456615	CMakeFiles/StickArena.dir/src/ecs/system/Collision.cpp.obj	a2dbf0da0bdb82ac
+46	18223	7803979202633174	build.ninja	fa72e9f462f73140
+5	7594	7803979202633174	build.ninja	fa72e9f462f73140
+40	102	7803979204811798	CMakeFiles/copy_assets	cd9161f77de3f825
+40	102	7803979204811798	C:/Projects c++/StickArena/cmake-build-debug-mingw/CMakeFiles/copy_assets	cd9161f77de3f825
+13	80	7803979211600564	CMakeFiles/copy_assets	cd9161f77de3f825
+13	80	7803979211600564	C:/Projects c++/StickArena/cmake-build-debug-mingw/CMakeFiles/copy_assets	cd9161f77de3f825
+5	54	7803979330292858	CMakeFiles/copy_assets	cd9161f77de3f825
+5	54	7803979330292858	C:/Projects c++/StickArena/cmake-build-debug-mingw/CMakeFiles/copy_assets	cd9161f77de3f825
+6	52	7803979611247532	CMakeFiles/copy_assets	cd9161f77de3f825
+6	52	7803979611247532	C:/Projects c++/StickArena/cmake-build-debug-mingw/CMakeFiles/copy_assets	cd9161f77de3f825
+52	2428	7803979611707145	CMakeFiles/StickArena.dir/src/core/Application.cpp.obj	cf95453fa7477b19
+2429	6302	7803979635476333	StickArena.exe	94c4b51bcf1cd3c1
+6	48	7803979777435461	CMakeFiles/copy_assets	cd9161f77de3f825
+6	48	7803979777435461	C:/Projects c++/StickArena/cmake-build-debug-mingw/CMakeFiles/copy_assets	cd9161f77de3f825
+48	2426	7803979777856557	CMakeFiles/StickArena.dir/src/core/Application.cpp.obj	cf95453fa7477b19
+2426	6126	7803979801638072	StickArena.exe	94c4b51bcf1cd3c1
+6	54	7803980000867409	CMakeFiles/copy_assets	cd9161f77de3f825
+6	54	7803980000867409	C:/Projects c++/StickArena/cmake-build-debug-mingw/CMakeFiles/copy_assets	cd9161f77de3f825
+54	2341	7803980001347405	CMakeFiles/StickArena.dir/src/core/Application.cpp.obj	cf95453fa7477b19
+2342	6185	7803980024228448	StickArena.exe	94c4b51bcf1cd3c1

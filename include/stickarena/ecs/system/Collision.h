@@ -1,12 +1,20 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <vector>
-#include <stickarena/ecs/system/Collision.h>
 
 #include "MovementSystem.h"
 
-namespace ecs::coll {
-    bool resolveOneAABB (sf::CircleShape& player, core::move::MovementComponent& pt, const sf::FloatRect& box, float eps = 0.5f);
+namespace core {namespace move {struct MovementComponent;}}
 
-    bool resolveAABBs (sf::CircleShape& player, core::move::MovementComponent& pt, const std::vector<sf::FloatRect>& boxes, float eps = 0.5f);
+namespace ecs::coll {
+    bool resolveRect (sf::CircleShape& shape,
+        core::move::MovementComponent& st,
+        sf::RectangleShape& rect,
+        float eps = 0.5f);
+
+    bool resolveRects(sf::CircleShape &shape,
+        core::move::MovementComponent &st,
+        const std::vector<sf::RectangleShape>& rects,
+        float eps = 0.5f);
+
 }

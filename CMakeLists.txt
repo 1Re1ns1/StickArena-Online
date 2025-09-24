@@ -25,6 +25,17 @@ target_link_libraries(StickArena PRIVATE
 find_package(entt CONFIG REQUIRED)
 target_link_libraries(StickArena PRIVATE EnTT::EnTT)
 
+set(ASSETS_DIR ${CMAKE_SOURCE_DIR}/assets)
+
+add_custom_target(copy_assets ALL
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${ASSETS_DIR}
+        ${CMAKE_CURRENT_BINARY_DIR}/assets
+        COMMENT "Copying assets to build dir"
+)
+
+# после add_executable(...)
+add_dependencies(StickArena copy_assets)   # StickArena — имя твоего exe target
 if(WIN32)
     add_custom_command(TARGET StickArena POST_BUILD
             COMMAND ${CMAKE_COMMAND} -E copy_directory
